@@ -1,6 +1,7 @@
 package com.pendulum101.gui;
 
 import java.awt.GridLayout;
+import java.awt.event.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -28,6 +29,13 @@ public class Home extends JFrame {
 			add(scrollView);
 			add(logout);
 			
+			newEntry.addActionListener( new ActionListener(){
+				public void actionPerformed(ActionEvent ae){
+					new NewEntry();
+				}
+			});
+
+			setLocationRelativeTo(null);
 			pack();
 		}
 }
