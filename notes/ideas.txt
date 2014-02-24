@@ -1,0 +1,22 @@
+Login
+
+Timestamp - created on, last edited
+
+How to encrypt the file
+
+Creating an internal editor for the app
+
+Calendar view making days with entries
+
+Minimalist view:
+Login
+  Text Boxes login password
+  	- red error message, invalid login details
+
+Calendar View
+	opens a distinct entry or entry within scroll view
+
+Scrolling view (with edit commands), Editor. 
+ 	reverse chronological order most recent first.
+ 	
+ 
