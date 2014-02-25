@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 public class Home extends JFrame {
 	private static final long serialVersionUID = -2658352827263601379L;
 	JLabel label = new JLabel("Welcome to Your Digital Journal");
-		//TODO add functionality to the buttons 
+//TODO 1 add functionality to the buttons 
 		JButton newEntry, calendar, scrollView ,logout;
 		
 		public Home(){
@@ -35,7 +35,11 @@ public class Home extends JFrame {
 				}
 			});
 
+			setAlwaysOnTop(true);
 			setLocationRelativeTo(null);
 			pack();
+		}
+		public static void main(String[] args){
+			new Home();
 		}
 }

@@ -50,10 +50,13 @@ public class Login extends JFrame {
 				String un = uName.getText();
 				String pa = new String(pass.getPassword());
 
+//TODO 1 Add in the call to encrypt the username and password and compare it to user credentials
+				
 				if ((un.equals("myuser")) && pa.equals("mypass")){
 					dispose();
 					new Home();
 				}
+//TODO 5 Warn user of incorrect login details 
 			}
 		});
 
@@ -67,8 +70,9 @@ public class Login extends JFrame {
 		pass.addKeyListener(k);
 		uName.addKeyListener(k);
 		
-		pack();
 		setLocationRelativeTo(null);
+		setAlwaysOnTop(true);
+		pack();
 	}
 	
 	protected ImageIcon createImageIcon(String url, String description) {
