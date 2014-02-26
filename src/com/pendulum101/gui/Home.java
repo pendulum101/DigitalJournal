@@ -1,5 +1,6 @@
 package com.pendulum101.gui;
 
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.*;
 
@@ -10,7 +11,7 @@ import javax.swing.JLabel;
 public class Home extends JFrame {
 	private static final long serialVersionUID = -2658352827263601379L;
 	JLabel label = new JLabel("Welcome to Your Digital Journal");
-//TODO 1 add functionality to the buttons 
+//TODO 2 add functionality to the buttons 
 		JButton newEntry, calendar, scrollView ,logout;
 		
 		public Home(){
@@ -18,6 +19,9 @@ public class Home extends JFrame {
 			setLayout(new GridLayout(2,2));
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			setVisible(true);
+			setMinimumSize(new Dimension(300, 180));
+			setAlwaysOnTop(true);
+			setLocationRelativeTo(null);
 			
 			newEntry = new JButton("New Entry");
 			calendar = new JButton("Calendar View");
@@ -28,6 +32,18 @@ public class Home extends JFrame {
 			add(calendar);
 			add(scrollView);
 			add(logout);
+
+			//Hit Enter for new journal entry screen
+//			newEntry.requestFocus();
+//			
+//			KeyAdapter k = new KeyAdapter() {
+//				public void keyPressed(KeyEvent ke){
+//					if(ke.getKeyCode() == KeyEvent.VK_ENTER)
+//						newEntry.doClick();
+//				}
+//			};
+//			
+//			newEntry.addKeyListener(k);
 			
 			newEntry.addActionListener( new ActionListener(){
 				public void actionPerformed(ActionEvent ae){
@@ -35,8 +51,7 @@ public class Home extends JFrame {
 				}
 			});
 
-			setAlwaysOnTop(true);
-			setLocationRelativeTo(null);
+			
 			pack();
 		}
 		public static void main(String[] args){

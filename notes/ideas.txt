@@ -8,7 +8,11 @@ Creating an internal editor for the app
 
 Calendar view making days with entries
 
-Minimalist view:
+Authentication - works for the moment, but I will need to improve it at a later stage
+(Does it even stop access to the other parts of the application)
+
+Minimalist view: K.I.S.S.
+
 Login
   Text Boxes login password
   	- red error message, invalid login details
@@ -18,5 +22,3 @@ Calendar View
 
 Scrolling view (with edit commands), Editor. 
  	reverse chronological order most recent first.
- 	
- 

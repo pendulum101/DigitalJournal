@@ -1,6 +1,9 @@
 package com.pendulum101.gui;
 
 import javax.swing.*;
+
+import com.pendulum101.authentication.Authentication;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -16,12 +19,14 @@ public class Login extends JFrame {
 		setLayout(new GridLayout(3,2));
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
-	
+		setLocationRelativeTo(null);
+		setAlwaysOnTop(true);
+
 		u = new JLabel("Username");
 		p = new JLabel("Password");
 		u.setHorizontalAlignment(JLabel.CENTER);
 		p.setHorizontalAlignment(JLabel.CENTER);
-		
+
 		uName = new JTextField(10);
 		pass = new JPasswordField(10); 		
 
@@ -50,13 +55,11 @@ public class Login extends JFrame {
 				String un = uName.getText();
 				String pa = new String(pass.getPassword());
 
-//TODO 1 Add in the call to encrypt the username and password and compare it to user credentials
-				
-				if ((un.equals("myuser")) && pa.equals("mypass")){
+				if(Authentication.authenticateUser(un ,pa)){
 					dispose();
 					new Home();
 				}
-//TODO 5 Warn user of incorrect login details 
+				//TODO 5 Warn user of incorrect login details 
 			}
 		});
 
@@ -66,15 +69,13 @@ public class Login extends JFrame {
 					login.doClick();
 			}
 		};
-		
+
 		pass.addKeyListener(k);
 		uName.addKeyListener(k);
-		
-		setLocationRelativeTo(null);
-		setAlwaysOnTop(true);
+
 		pack();
 	}
-	
+
 	protected ImageIcon createImageIcon(String url, String description) {
 		java.net.URL imgURL = getClass().getResource(url);
 		if (imgURL != null){

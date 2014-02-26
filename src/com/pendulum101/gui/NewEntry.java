@@ -36,11 +36,7 @@ public class NewEntry extends JFrame{
 		this.add(mid, c);
 		bottom = new JPanel();
 		c.gridy = 2;
-		this.add(bottom, c);
-		
-//TODO 0 resizing is also an issue
-//TODO 0 text area (how to allow for resizing) possibly using panels ^
-//TODO 1 fill in the rest of the fields
+		this.add(bottom, c);		
 
 //TODO 3 Have title disappear when you start typing 		
 		journalEntryTitle = new JTextField("Title", 20);
@@ -64,7 +60,7 @@ public class NewEntry extends JFrame{
 		
 		clear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				journalEntryTitle.setText("");
+				journalEntryTitle.setText("Title");
 				journalEntry.setText("");
 			}
 		});

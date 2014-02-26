@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<journal>
+	<entry date="date_in_millis">
+		<title>A great day!</title>
+		<entryContents>Today was a great day I hope there are many more like it</entryContents>
+		<mood>2</mood>
+	</entry>
+</journal>
