@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT journal (entry*)>
+<!ELEMENT entry (title, date, entryContents, mood)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT entryContents (#PCDATA)>
+<!ELEMENT mood (#PCDATA)>
+<!ATTLIST entry entryDate date >

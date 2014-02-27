@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<journal>
+	<entry date="1234456678">
+		<title>A great day!</title>
+		<date>23231</date>
+		<entryContents>Today was a great day I hope there are many more like it</entryContents>
+		<mood>2</mood>
+	</entry>
+	<entry date="1234456678">
+		<title>Great it's working !</title>
+		<date>23231</date>
+		<entryContents>Today was a great day I hope there are many more like it</entryContents>
+		<mood>2</mood>
+	</entry>
+	
+</journal>

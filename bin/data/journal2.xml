@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE journal SYSTEM "journal.dtd">
+<journal>
+    <entry>
+        <title>A great day!</title>
+        <date>23231</date>
+        <entryContents>Today was a great day I hope there are many more like it</entryContents>
+        <mood>2</mood>
+    </entry>
+    <entry>
+        <title>Great it's working !</title>
+        <date>23231</date>
+        <entryContents>Today was a great day I hope there are many more like it</entryContents>
+        <mood>2</mood>
+    </entry>
+</journal>
